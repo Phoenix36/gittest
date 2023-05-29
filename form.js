@@ -1,7 +1,7 @@
 8// Declare the variables using the constructor elements
 const loader = document.querySelector('.loader');
 const form = document.querySelector('.container');
-const submitButton = document.querySelector('.submit-btn');
+const submitButton = document.querySelector('.submitbtn');
 const alertBox = document.querySelector('.alert-box');
 const alertMsg = document.querySelector('.alert-msg');
 

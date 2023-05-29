@@ -15,9 +15,12 @@ loginButton.addEventListener("click", function(event) {
     alert("Invalid username or password");
   }
 
-  if(username === "pheonix"&& password === "yo"){
+  if(username === "Pheonix"&& password === "Yo"){
     alert("Login Successful");
     window.location.href = "dashboard.html";
+  }
+  else{
+    alert("Invalid Username or Password")
   }
 });
 
