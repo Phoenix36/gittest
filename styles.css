@@ -1,0 +1,142 @@
+/* Reset all margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font */
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #8dd1e2;
+  color: #ffffff;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.link-item {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #1199c2;
+  padding: 2rem;
+}
+
+.slogan {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  color: #ffffff;
+}
+
+.hero-logo {
+  width: 200px;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  color: #ffffff;
+}
+
+/* Main Content */
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+
+.container1 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.container1 p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.footer-container {
+  background-color: #333333;
+  color: #000000;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container .logo {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.footer-container .logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.footer-container p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+
+
+
+.pill-container {
+  background-color: #4244c9;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  color:#fff;
+}
+
+.pill-container a {
+  color: #212121;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
