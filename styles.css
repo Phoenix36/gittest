@@ -147,6 +147,7 @@ footer {
   font-size: 16px;
   text-align: center;
   margin-top: 25px;
-  margin-bottom: none;
-  width: 900%;
+margin-bottom: 0;
+  width: 100%;
+  padding:1rem;
 }

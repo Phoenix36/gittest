@@ -55,6 +55,7 @@ submitButton.addEventListener('click', () => {
     alertBox.classList.remove('show');
     loader.style.display = 'block';
     form.submit();
+    window.location.href="dashboard.html";
   }
 });
 
