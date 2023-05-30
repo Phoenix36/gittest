@@ -26,31 +26,31 @@ submitButton.addEventListener('click', () => {
     alertBox.classList.add('show');
     setTimeout(() => {
       alertBox.classList.remove('show');
-    }, 3000); // Hide alert box after 3 seconds (3000 milliseconds)
+    }, 3000); 
   } else if (password.length < 8) {
     alertMsg.textContent = 'Password should be at least 8 letters long.';
     alertBox.classList.add('show');
     setTimeout(() => {
       alertBox.classList.remove('show');
-    }, 3000); // Hide alert box after 3 seconds (3000 milliseconds)
+    }, 3000); 
   } else if (number === '' || isNaN(number) || number.length < 10) {
     alertMsg.textContent = 'Please enter a valid phone number.';
     alertBox.classList.add('show');
     setTimeout(() => {
       alertBox.classList.remove('show');
-    }, 3000); // Hide alert box after 3 seconds (3000 milliseconds)
+    }, 3000); 
   } else if (!termsAndCond) {
     alertMsg.textContent = 'You must agree to our terms and conditions.';
     alertBox.classList.add('show');
     setTimeout(() => {
       alertBox.classList.remove('show');
-    }, 3000); // Hide alert box after 3 seconds (3000 milliseconds)
+    }, 3000); 
   } else if (!notification) {
     alertMsg.textContent = 'You must be 13 years or older to create an account.';
     alertBox.classList.add('show');
     setTimeout(() => {
       alertBox.classList.remove('show');
-    }, 3000); // Hide alert box after 3 seconds (3000 milliseconds)
+    }, 3000); 
   } else {
     alertBox.classList.remove('show');
     loader.style.display = 'block';
