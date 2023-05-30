@@ -1,26 +1,40 @@
-const loginButton = document.getElementById("login-button");
 
-loginButton.addEventListener("click", function(event) {
-  event.preventDefault(); // prevent form submission
+// Initialize Firebase
+var firebaseConfig = {
+  // Replace with your own Firebase config object
+  apiKey: "AIzaSyDf8WKtC3igTauCp2y7Af8NdBZn4YQty-w",
+authDomain: "messagingapp-c71e3.firebaseapp.com",
+projectId: "messagingapp-c71e3",
+storageBucket: "messagingapp-c71e3.appspot.com",
+messagingSenderId: "405110883840",
+appId: "1:405110883840:web:1eea502e952429c84a7ae5"
+};
 
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+firebase.initializeApp(firebaseConfig);
 
-  // do some validation
-  if (username === "admin" && password === "password") {
-    alert("Login successful");
-    window.location.href = "dashboard.html";
-  } 
-  else {
-    alert("Invalid username or password");
-  }
+// Get a reference to the Firebase authentication service
+var auth = firebase.auth();
 
-  if(username === "Pheonix"&& password === "Yo"){
-    alert("Login Successful");
-    window.location.href = "dashboard.html";
-  }
-  else{
-    alert("Invalid Username or Password")
-  }
+// Get references to the login form fields
+var emailField = document.getElementById('email');
+var passwordField = document.getElementById('password');
+var loginForm = document.getElementById('login-form');
+
+// Add login form submit event listener
+loginForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  var email = emailField.value;
+  var password = passwordField.value;
+
+  // Sign in with email and password
+  auth.signInWithEmailAndPassword(email, password)
+    .then(function(userCredential) {
+      // Login successful, redirect to the dashboard
+      window.location.href = 'dashboard.html';
+    })
+    .catch(function(error) {
+      // Handle login errors
+      console.error('Login error:', error.message);
+    });
 });
-
